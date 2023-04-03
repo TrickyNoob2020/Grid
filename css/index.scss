@@ -1,0 +1,132 @@
+@import './Styles/styles.scss';
+@import './_normalize.scss';
+
+:root {
+    box-sizing: border-box;
+    background-color: $cream;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    background-color: inherit;
+}
+
+.border {
+    border-radius: 5px 5px 5px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box1 {
+    &>.product-image {
+        display: block;
+        position: relative;
+        width: 300px;
+        height: 450px;
+        border-radius: 5px 4px 12px;
+    }
+}
+
+.box2 {
+    display: block;
+    width: 350px;
+    height: 70vh;
+    border-radius: 12px 5px 4px;
+    background-color: $white;
+
+    .header-text {
+        margin-top: 1em;
+        font-family: $font-Fraunces;
+        font-size: 1.125em;
+        padding-left: 2.1em;
+        font-weight: 100;
+        letter-spacing: 5px;
+        color: $very-grayish-blue;
+    }
+
+    .heading-text {
+        width: 250px;
+        position: relative;
+        top: -5;
+        padding-left: 1em;
+        word-spacing: 0;
+        letter-spacing: 0;
+        font-family: $font-Montserrat;
+        font-size: 2.1em;
+        font-weight: 700;
+        color: $very-dark-blue;
+        word-break: break-all;
+        word-wrap: break-all;
+    }
+
+    .long-para {
+        width: 280px;
+        display: block;
+        position: relative;
+        top: -0.4em;
+        padding-left:35px;
+        font-size: $font-size;
+        color: $very-grayish-blue;
+        font-family: $font-Montserrat;
+        letter-spacing: 1.9px;
+        line-height: 2.1;
+        font-weight: 500;
+        word-break: break-all;
+        word-wrap: break-word;
+    }.price-container{
+        display: inline-block;
+        position: relative;
+        top: -15px;
+        padding-left: 2em;
+    }
+
+    .price-tag {
+        display: inline-block;
+        margin: 12px 0 30px 0;
+        color: $dark-cyan;
+        font-family: $font-Fraunces;
+        font-size: 30px;
+        font-weight: 700;
+        
+    }.deleted-price{
+        display: inline-block;
+        position: inherit;
+        top: -0.41em;
+        padding-left: 0.88em;
+        font-family: $font-Fraunces;
+        color: $very-grayish-blue;
+        text-decoration: line-through;
+    }.layout{
+        background-color: $dark-cyan;
+        background-clip: padding-box;
+        padding-top: 17px;
+        padding-bottom: 15px;
+        margin: 0 auto;
+        width: 300px;
+        border-radius: 6px 6px 6px 6px;
+        position: relative;
+        top: -30px;
+        padding-left: 50px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        gap: 16px;
+        .icon-cart{
+            display: block;
+        }& > .cart-text{
+            display: inline-block;
+            font-size: $font-size;
+            font-family: $font-Montserrat;
+            font-weight: 700;
+            color: $white;
+        }
+    }
+}

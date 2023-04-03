@@ -1,0 +1,24 @@
+/* Primary Colors */
+
+$dark-cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+
+/* Neutral */
+$very-dark-blue: hsl(212, 21%, 14%);
+$very-grayish-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+
+/* Topography */
+
+$font-size: 14px;
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.google.com/specimen/Montserrat');
+}
+@font-face{
+    font-family: 'Fraunces';
+    src: url('https://fonts.google.com/specimen/Fraunces');
+}
+$font-Fraunces: 'Fraunces', serif;
+$font-Montserrat: 'Montserrat', sans-serif;
